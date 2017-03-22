@@ -1,0 +1,21 @@
+<table>
+	<tr>
+		<th>Date</th>
+		<th>Category</th>
+		<th>Description</th>
+		<th>District</th>
+		<th>Address</th>
+		<th>Resolution?</th>
+	</tr>
+	<%@crimes.each do |crime|%>
+	<tr>
+		<td><%=crime["date"]%></td>
+		<td><%=crime["category"]%></td>
+		<td><%=crime["descript"]%></td>
+		<td><%=crime["pddistrict"]%></td>
+		<td><%=crime["address"]%></td>
+		<td><%=crime["resolution"]%></td>
+
+	</tr>
+	<%end%>
+</table>
